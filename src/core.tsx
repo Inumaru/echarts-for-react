@@ -56,7 +56,7 @@ export default class EChartsReactCore extends PureComponent<EChartsReactProps> {
     if (
       !isEqual(prevProps.theme, this.props.theme) ||
       !isEqual(prevProps.opts, this.props.opts) ||
-      !isEqual(prevProps.onEvents, this.props.onEvents)
+      !isEqual(Object.keys(prevProps.onEvents), Object.keys(this.props.onEvents))
     ) {
       this.dispose();
 
