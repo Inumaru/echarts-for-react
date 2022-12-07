@@ -36,7 +36,7 @@ var EChartsReactCore = /** @class */ (function (_super) {
         // 3. 修改 onEvents 的时候，这样可以取消所有之前绑定的事件 issue #151
         if (!isEqual(prevProps.theme, this.props.theme) ||
             !isEqual(prevProps.opts, this.props.opts) ||
-            !isEqual(prevProps.onEvents, this.props.onEvents)) {
+            !isEqual(Object.keys(prevProps.onEvents), Object.keys(this.props.onEvents))) {
             this.dispose();
             this.renderNewEcharts(); // 重建
             return;

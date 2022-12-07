@@ -1,6 +1,6 @@
 {
   "name": "echarts-for-react-pix",
-  "version": "3.0.2-a",
+  "version": "3.0.2-b",
   "description": " Apache Echarts components for React.",
   "main": "lib/index.js",
   "module": "esm/index.js",
